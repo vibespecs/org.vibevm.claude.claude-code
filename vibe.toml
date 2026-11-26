@@ -2,9 +2,18 @@
 name = "claude-code"
 group = "org.vibevm.claude"
 kind = "app"
-version = "2.1.329"
+version = "0.0.2"
+template = true
+format = "normal"
 [application]
 id = "claude-code"
+
+
+[template.versions]
+kind = "list"
+
+[[template.versions.item]]
+version = "2.1.332"
 
 [[installer_options]]
 id = "linux-x64-native"
@@ -14,8 +23,8 @@ platform_name = "Linux"
 arch = "x86_64"
 [installer_options.installation]
 type = "tar_gz"
-source = "https://registry.npmjs.org/@anthropic-ai/claude-code-linux-x64/-/claude-code-linux-x64-2.1.329.tgz"
-sha256 = "a74d6c8441a19b2d2f44c1f5735b37dc0a34b2d4f224f8333d08ce03cf2060bb"
+source = "https://registry.npmjs.org/@anthropic-ai/claude-code-linux-x64/-/claude-code-linux-x64-{version}.tgz"
+sha256 = "1c89f2f1e0bee93742cff8de9181fc07c702ce0651f1492bb3b97487d3a84af1"
 payload_root = "package"
 [[installer_options.launchers]]
 id = "main"
@@ -35,8 +44,8 @@ platform_name = "macOS"
 arch = "x86_64"
 [installer_options.installation]
 type = "tar_gz"
-source = "https://registry.npmjs.org/@anthropic-ai/claude-code-darwin-x64/-/claude-code-darwin-x64-2.1.329.tgz"
-sha256 = "ea36a30eefe805fa05fcb6b8d84865ce6fd1d47b6aa8d9d019cd5ba829c28b33"
+source = "https://registry.npmjs.org/@anthropic-ai/claude-code-darwin-x64/-/claude-code-darwin-x64-{version}.tgz"
+sha256 = "c4ca1282b0d7bf9cc550268e37fa5d4c2bd19e39c61715cc7466eb5c41d5015a"
 payload_root = "package"
 [[installer_options.launchers]]
 id = "main"
@@ -56,8 +65,8 @@ platform_name = "Windows"
 arch = "x86_64"
 [installer_options.installation]
 type = "tar_gz"
-source = "https://registry.npmjs.org/@anthropic-ai/claude-code-win32-x64/-/claude-code-win32-x64-2.1.329.tgz"
-sha256 = "e54e1378a9fc3478b4f8769ec8ab7c48a0d234a807c6853edb17a886cd905280"
+source = "https://registry.npmjs.org/@anthropic-ai/claude-code-win32-x64/-/claude-code-win32-x64-{version}.tgz"
+sha256 = "69362d15b1d9817a1b346b65be57e901ce581a1119a2cf1cf9ca448b62ed1f66"
 payload_root = "package"
 [[installer_options.launchers]]
 id = "main"
@@ -77,8 +86,8 @@ platform_name = "macOS"
 arch = "aarch64"
 [installer_options.installation]
 type = "tar_gz"
-source = "https://registry.npmjs.org/@anthropic-ai/claude-code-darwin-arm64/-/claude-code-darwin-arm64-2.1.329.tgz"
-sha256 = "705b53d7138e476686708921e321b4603a7973823362bd079b0400e54756df39"
+source = "https://registry.npmjs.org/@anthropic-ai/claude-code-darwin-arm64/-/claude-code-darwin-arm64-{version}.tgz"
+sha256 = "5595da3b4ae283732a85a8588c5f8c6bc50ad39d0dd3de678c4d6307dd9a079d"
 payload_root = "package"
 [[installer_options.launchers]]
 id = "main"
